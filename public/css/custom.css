@@ -1,0 +1,27 @@
+input.invalid{
+ border: 1px solid red;
+}
+.invalid{ 
+ display: inline;
+}
+em.invalid {
+ width: auto;
+ display: inline;
+ color: red;
+ font-weight: normal;
+ font-style: normal;
+}
+
+.add-link{
+  font-size: 18px;
+  color:blue;
+}
+
+.i_delete{
+    color:#d73925;
+}
+.s_active{color: #008d4c;}
+.s_inactive{color: #d73925;}
+.add-btn-primary{width: 50px; margin-bottom: 10px;}
+
+
