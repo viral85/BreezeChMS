@@ -128,9 +128,11 @@ class PeopleController extends Controller
                 $query->orWhere('last_name', "Like", "%$val%");
                 $query->orWhere('email_address', "Like", "%$val%");
                 $query->orWhere('group_id', "Like", "%$val%");
-                $query->with(['group' => function ($query) use ($val){
-                            $query->where('group_name', "Like", "%$val%");
-                        }]);
+                $query->orWhere(function($query) use ($val) {
+                    $query->whereHas('group', function ($query) use ($val) {
+                        $query->where('group_name', "Like", "%$val%");
+                    });
+                });
             });
 
             // No of record after filtering
@@ -140,9 +142,11 @@ class PeopleController extends Controller
                 $query->orWhere('last_name', "Like", "%$val%");
                 $query->orWhere('email_address', "Like", "%$val%");
                 $query->orWhere('group_id', "Like", "%$val%");
-                $query->with(['group' => function ($query) use ($val){
-                            $query->where('group_name', "Like", "%$val%");
-                        }]);
+                $query->orWhere(function($query) use ($val) {
+                    $query->whereHas('group', function ($query) use ($val) {
+                        $query->where('group_name', "Like", "%$val%");
+                    });
+                });
                 })->count();
         }
         
