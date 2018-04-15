@@ -58,7 +58,7 @@
                     </div>
                     <div class="box-footer">
                         <button type="submit" id="submit" class="btn btn-primary btn-flat" >{{trans('labels.savebtn')}}</button>
-                        <a class="btn btn-danger btn-flat pull-right" href="{{ url('admin/professions') }}">{{trans('labels.cancelbtn')}}</a>
+                        <a class="btn btn-danger btn-flat pull-right" href="{{ url('dashboard') }}">{{trans('labels.cancelbtn')}}</a>
                     </div><!-- /.box-footer -->
                 </form>
             </div>   <!-- /.row -->

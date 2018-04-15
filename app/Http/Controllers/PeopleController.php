@@ -71,7 +71,7 @@ class PeopleController extends Controller
                 $this->objPeople->insertUpdate($data);
             }
 
-            return Redirect::to("uploadcsv")->with('success', trans('labels.peoplecsvuploadedsuccessfully'));
+            return Redirect::to("dashboard")->with('success', trans('labels.peoplecsvuploadedsuccessfully'));
     	}
     	elseif(Input::get('upload_type') == '2') //Group
     	{
@@ -85,7 +85,7 @@ class PeopleController extends Controller
 				$data['group_name'] = $value->group_name;
 				$this->objGroup->insertUpdate($data);
 			}
-            return Redirect::to("uploadcsv")->with('success', trans('labels.groupcsvuploadedsuccessfully'));
+            return Redirect::to("dashboard")->with('success', trans('labels.groupcsvuploadedsuccessfully'));
     	}
 
     }
