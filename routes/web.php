@@ -13,7 +13,11 @@
 Route::get('/', function () {
     return Redirect::to('/dashboard');
 });
+
 Route::get('/login', 'Auth\LoginController@index');
 Route::post('/logincheck', 'Auth\LoginController@authenticate');
 Route::get('/logout', 'DashboardController@getLogout');
 Route::get('/dashboard', 'DashboardController@index');
+
+Route::get('/uploadcsv', 'PeopleController@uploadCsv');
+Route::post('/savecsv', 'PeopleController@importCsv');

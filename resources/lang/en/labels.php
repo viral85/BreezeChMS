@@ -12,9 +12,9 @@ return [
       | these language lines according to your application's requirements.
       |
      */
-    'appname' => 'Admin Panel',
-    'appshortname' => 'AP',
-    'admin' => 'Admin',
+    'appname' => 'BreezeChMS',
+    'appshortname' => 'B',
+    'admin' => 'BreezeChMS Admin',
     'online' => 'Online',
     'startsession' => 'Sign in to start your session',
     'emaillbl' => 'Email',
@@ -22,7 +22,7 @@ return [
     'login' => 'Login',
     'logout' => 'Logout',
     'dashboard' => 'Dashboard',
-    'copyrightstr' => '<strong>Copyright &copy; 2017-2018 <a href="">Admin Panel</a>.</strong> All rights reserved.',
+    'copyrightstr' => '<strong>Copyright &copy; 2017-2018 <a href="">BreezeChMS</a>.</strong> All rights reserved.',
     'version' => '<b>Version</b> 1.0',
     'emailtemplates' => 'Email Templates',
     'emailtemplate' => 'Email Template',
@@ -57,6 +57,17 @@ return [
     'cancelbtn' => 'Cancel',
     'whoops' => 'Whoops!',
     'someproblems' => 'There were some problems with your input.',
-    'recordnotexist' => 'Record does not exists'
+    'recordnotexist' => 'Record does not exists',
+    'peoples' => 'Peoples List',
+    'uploadcsv' => 'Upload CSV',
+    'csvtype' => 'CSV type',
+    'selectcsvtype' => 'Select CSV type',
+    'people' => 'People',
+    'group' => 'Group',
+    'selectcsvfile' => 'Select CSV File',
+    'peoplecsvuploadedsuccessfully' => 'People CSV uploaded successfully',
+    'groupcsvuploadedsuccessfully' => 'Group CSV uploaded successfully',
+    'peoplecolumnnotfound' => 'CSV Column not match for import People Data',
+    'groupcolumnnotfound' => 'CSV Column not match for import Group Data',
 ];
 
