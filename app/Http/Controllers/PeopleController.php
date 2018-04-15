@@ -92,7 +92,10 @@ class PeopleController extends Controller
 
 
     public function getPeopleData() {
-        $peoples = $this->objPeople->where('status', '<>', Config::get('constant.DELETED_FLAG'))->count();
+        $peoples = $this->objPeople->where('status', '<>', Config::get('constant.DELETED_FLAG'));
+        if( Input::get('group_id') ){
+            $peoples->Where('group_id',Input::get('group_id'));
+        }
         
         $records = array();
         $columns = array(
@@ -108,7 +111,7 @@ class PeopleController extends Controller
         $order = Input::get('order');
         $search = Input::get('search');
         $records["data"] = array();
-        $iTotalRecords = $peoples;
+        $iTotalRecords = $peoples->count();
         $iTotalFiltered = $iTotalRecords;
         $iDisplayLength = intval(Input::get('length')) <= 0 ? $iTotalRecords : intval(Input::get('length'));
         $iDisplayStart = intval(Input::get('start'));
