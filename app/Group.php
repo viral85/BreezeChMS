@@ -29,7 +29,7 @@ class Group extends Model
      * get all Group
      */
     public function getAllGroup() {  
-        $tags = Group::where('status', '<>', Config::get('constant.DELETED_FLAG'))->get();
+        $tags = Group::where('status', Config::get('constant.ACTIVE_FLAG'))->get();
         return $tags;
     }
 

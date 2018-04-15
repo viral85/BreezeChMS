@@ -17,7 +17,8 @@ Route::get('/', function () {
 Route::get('/login', 'Auth\LoginController@index');
 Route::post('/logincheck', 'Auth\LoginController@authenticate');
 Route::get('/logout', 'DashboardController@getLogout');
-Route::get('/dashboard', 'DashboardController@index');
 
+Route::get('/dashboard', 'PeopleController@index');
 Route::get('/uploadcsv', 'PeopleController@uploadCsv');
 Route::post('/savecsv', 'PeopleController@importCsv');
+Route::post('/getPeopleData', 'PeopleController@getPeopleData');

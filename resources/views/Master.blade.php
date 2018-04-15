@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="{{ asset('css/skins/skin-red.min.css')}}">
         <link rel="stylesheet" href="{{ asset('css/jquery-ui.css')}}">
         <link rel="stylesheet" href="{{ asset('css/custom.css')}}">
+        <link rel="stylesheet" href="{{ asset('css/jquery.dataTables.min.css') }}"/>
 
         @yield('header')
     </head>
@@ -158,6 +159,8 @@
         <!-- backendLTE App -->
         <script src="{{ asset('js/app.min.js')}}"></script>
         <script src="{{ asset('js/jquery.validate.min.js') }}"></script>
+        <script src="{{ asset('js/jquery.dataTables.min.js')}}"></script>
+        <script src="{{ asset('js/dataTables.bootstrap.min.js')}}"></script>
         @yield('script')
     </body>
     </body>

@@ -37,6 +37,7 @@ return [
     'savebtn' => 'Save',
     'cancelbtn' => 'Cancel',
     'activelbl' => 'Active',
+    'archivedlbl' => 'Archived',
     'inactivelbl' => 'Inactive',
     'formlblName' => 'Template Name',
     'formlblpseudoname' => 'Pseudo Name',
@@ -69,5 +70,13 @@ return [
     'groupcsvuploadedsuccessfully' => 'Group CSV uploaded successfully',
     'peoplecolumnnotfound' => 'CSV Column not match for import People Data',
     'groupcolumnnotfound' => 'CSV Column not match for import Group Data',
+    'person_id' => 'Person Id',
+    'first_name' => 'First Name',
+    'last_name' => 'Last Name',
+    'email_address' => 'Email Address',
+    'group_id' => 'Group Id',
+    'group_name' => 'Group Name',
+    'status' => 'State',
+    'selectgroupname' => 'Select Group Name',
 ];
 

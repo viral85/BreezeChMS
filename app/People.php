@@ -32,5 +32,10 @@ class People extends Model
         $tags = People::where('status', '<>', Config::get('constant.DELETED_FLAG'))->get();
         return $tags;
     }
+    
+    public function group()
+    {
+        return $this->belongsTo('App\Group', 'group_id');
+    }
 
 }
